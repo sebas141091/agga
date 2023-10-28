@@ -57,8 +57,7 @@ function CargarCombo2(combo/*arrayCombo*/,c){
         option.value=variable;
         c.append(option)
     })
-}
-
+} 
  Personajes();
  
  setTimeout(() => {
