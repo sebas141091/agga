@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card {
+    width: 240px;
+    height: 70px;
+    background: #1b5699;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .border {
+    position: absolute;
+ 
+    border-style: double;
+    color: #fff;
+    border-left: 1px #1b5699 solid;
+    border-right: 3px #1b5699 solid;
+    opacity: 0;
+    transform: rotate(10deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+
+  .content {
+    transition: all 0.5s ease-in-out;
+  }
+
+.logo__agga{
+  display: flex;
+    color: #fff;
+    font-size: 2.9em;
+    font-weight: bold;
+}
+.icono__lab{
+  font-size: .8em;
+  margin-left: 10px;
+  transition: 1s;
+}
+ 
+
+  
+  
+  .logo {
+    height: 35px;
+    position: relative;
+    width: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+  }
+
+  
+  .logo2 {
+    height: 33px;
+    position: absolute;
+    font-size: .665em;
+    width: 133px;
+    color: #fff;
+   
+  }
+  .trail {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+  
+ 
+  .card:hover {
+    border-radius: 0;
+    transform: scale(1.1);
+  }
+  
+  .card:hover .logo {
+    width: 100%;
+    animation: opacity 1s ease-in-out;
+  }
+  
+  .card:hover .border {
+    inset: 2px;
+    opacity: 1;
+    transform: rotate(0);
+  }
+  
+  .card:hover .icono__lab {
+    
+    transform: translateY(6px) scale(1.35);
+    
+  }
+  
+  .card:hover .trail {
+    animation: trail 1s ease-in-out;
+  }
+  
+  @keyframes opacity {
+    0% {
+      border-right: 1px solid transparent;
+      height: 1em;
+    }
+  
+    10% {
+      border-right: 1px solid #fff;
+      height: 1em;
+    }
+  
+    80% {
+      border-right: 1px solid #fff;
+      height: 1em;
+    }
+  
+    100% {
+      border-right: 1px solid transparent;
+      height: 1em;
+    }
+  }
+  
+  @keyframes trail {
+    0% {
+      background: linear-gradient(90deg, rgba(0, 0, 238, 0) 90%, rgb(185, 185, 184) 100%);
+      opacity: 0;
+    }
+  
+    30% {
+      background: linear-gradient(90deg, rgba(165, 165, 165, 0) 70%, rgb(146, 146, 146) 100%);
+      opacity: 1;
+    }
+  
+    70% {
+      background: linear-gradient(90deg, rgba(170, 170, 170, 0) 70%, rgb(129, 129, 129) 100%);
+      opacity: 1;
+    }
+  
+    95% {
+      background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(177, 176, 174) 100%);
+      opacity: 0;
+    }
+  }

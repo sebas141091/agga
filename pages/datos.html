@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../datos.js" defer></script>
+    <link rel="stylesheet" href="../scss/styles.css">
+    <title>Datos</title>
+</head>
+
+
+
+
+
+<body id="body">
+  <header>
+    <nav class="barra__navegacion barra__registrarse "> 
+      
+      <section class="barra__datos">
+        <div class="contenedor__datos">  
+          <ul class="datos">
+            <li class="datos__tel"><i class="fa-solid fa-phone"></i> 2114-1420</li>
+            <li class="datos__email"><i class="fa-solid fa-envelope"></i> aministracion@agga.com.ar</li>
+            <li class="datos__lofoFb"><i class="fa-brands fa-facebook-f"></i></li>
+          </ul>
+      </div>
+      </section>
+      
+      <section class="nav">
+        
+        <div class="logo">
+          <div class="contenedor">
+        <a href="../index.html"> <img src="../imagenes/logo1.png" alt=""></a>
+          </div>
+        </div>
+        
+        <div class="menu">
+          
+        </div>
+      </section>
+    </nav>
+</header>
+    <main class="personajes">
+      <section class="personajes__contenedor">  
+        <div class="contenedor">
+          <div class="contenedor__titulo titulo__personaje">
+            PERSONAJES
+          </div>
+
+          <div class="container text-center">
+            <div class="row" id ="row">
+              <div class="col-md-11 col-lg-11 col-xxl-11 contenedor__filtro">
+                <div class="contenedor__subtitulo">
+                  <h4 class="subtitulo__personaje">FILTRO</h4>
+                </div>
+                <div class="contenedor__subtitulo">
+                  <label for="" id="genero">Genero</label>
+                  <select name="filtro__genero" id="filtro__genero">selecciones una opcion
+                    <option value="">-----</option>
+                  </select>
+
+                  <label for="" id="especie">Especie</label>
+                  <select name="filtro__especie" id="filtro__especie">selecciones una opcion
+                    <option value="">-----</option>
+                  </select>
+
+                  <label for="" id="vivo">vivo?</label>
+                  <select name="filtro__vivo" id="filtro__vivo">selecciones una opcion
+                    <option value="">-----</option>
+                  </select>
+
+                  <input type="button" value="Buscar" id="buscar">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="container text-center">
+          <div class="row" id ="row">
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

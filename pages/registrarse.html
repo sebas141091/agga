@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../registrarse.js" defer></script>
+    <link rel="stylesheet" href="../scss/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrarse</title>
+</head>
+<body>
+    <header>
+        <nav class="barra__navegacion barra__registrarse "> 
+          
+          <section class="barra__datos">
+            <div class="contenedor__datos">  
+              <ul class="datos">
+                <li class="datos__tel"><i class="fa-solid fa-phone"></i> 2114-1420</li>
+                <li class="datos__email"><i class="fa-solid fa-envelope"></i> aministracion@agga.com.ar</li>
+                <li class="datos__lofoFb"><i class="fa-brands fa-facebook-f"></i></li>
+              </ul>
+          </div>
+          </section>
+          
+          <section class="nav">
+            
+            <div class="logo">
+              <div class="contenedor">
+            <a href="../index.html"> <img src="../imagenes/logo1.png" alt=""></a>
+              </div>
+            </div>
+            
+            <div class="menu">
+              <ul class="menu__secciones">
+                <li class="inicio "><a href="#" class="secciones"><div>INICIO</div></a> </li>
+                <li class="servicios"><a href="#" class="secciones"><div>SERVICIOS </div></a> </li>
+                <li class="nosotros"><a href="#" class="secciones"><div>NOSOTROS</div></a> </li>
+                <li class="multimedia"><a href="#" class="secciones"><div>MULTIMEDIA</div></a> </li>
+                <li class="contacto"><a href="#" class="secciones"><div>CONTACTO</div></a> </li>
+               
+              </ul>
+            </div>
+          </section>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="" class="registrarse">
+                <label class="registrarse__subtitulo" for="" value="">usuario</label>
+
+                <input class="registrarse__input  input__usu" type="text" id="registrarse__usu">
+
+                <label class="registrarse__subtitulo" id="registrarse__subtitulo" for="" >Nombre</label>
+                <input class="registrarse__input input__nom" type="text" id="registrarse__nom">
+                
+                <label class="registrarse__subtitulo" for="">Apellido</label>
+                <input class="registrarse__input input__ape" type="text" id="registrarse__ape">
+                
+                <label class="registrarse__subtitulo" for="">contraseña</label>
+                <input class="registrarse__input input__pass" type="text" id="registrarse__pass">
+                
+                <label class="registrarse__subtitulo" for="">E-mail</label>
+                <input class="registrarse__input input__email" type="email" id="registrarse__mail">
+                
+                <label class="registrarse__subtitulo" for="">numero telefono</label>
+                <input class="registrarse__input input__num" type="text" id="registrarse__num">
+                
+                <button id="reg">logearse</button>
+          
+            </form>
+        </section>
+    </main>
+    
+
+</body>
+</html>

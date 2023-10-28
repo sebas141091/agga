@@ -1,0 +1,35 @@
+
+.barra__navegacion .nav{
+    position: relative;
+}
+
+.registrarse{
+
+    &__input{
+        display: block;
+    }
+}
+.usuarioDisponible{
+    display: block;
+    font-size: .9em;
+    color:rgb(12, 97, 12);
+    opacity: .7;
+    margin: 5px;
+    
+}
+.usuarioNoDisponible{
+    display: block;
+    font-size: .9em;
+    color:rgb(177, 16, 16);
+    opacity: .7;
+    
+}
+.margen{
+    margin-left: 3em;
+    margin-bottom: 1em;
+    margin-top: -.8em;
+}
+.registrarse{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,32 @@
+
+.main__nosotros{
+    margin-top: 1em;
+    background-color: #f3f3f3;
+}
+.columna__nosotros{
+    display: flex;
+    flex-direction: column;
+}
+.secciones__titulo{
+    margin-left: -2.5em;
+}
+.contenedor__titulo{
+    font-size: 3.1em;
+    font-weight: bold;
+    color: #07162d;
+}
+.parrafo__nosotros{
+    margin-top: 0;
+    /* margin-bottom: 1rem; */
+    width: 30em;
+    text-align: justify;
+    /* display: flex; */
+    align-self: end;
+    padding-right: 65px;
+}
+.columna__img{
+    background-image: url(../../imagenes/nosotros.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

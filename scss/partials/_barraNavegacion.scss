@@ -1,0 +1,82 @@
+.barra__img{
+    background-image: url(../../imagenes/muestra.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+}
+.barra__navegacion{
+    
+   width: 100%;
+   display: flex; 
+   flex-direction: column;
+  height:100vh;
+    .barra__datos{
+        height: 30px;
+        width: 100%; 
+        background: #2e74c4;
+        position:fixed;
+        .contenedor__datos{
+            width:50%;
+            display: flex;
+            justify-content: center;
+            //align-items: center;
+            height: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        .datos{
+            display: flex;
+            gap: 1em;
+
+            & li{
+               color: #fff;
+            }
+        }   
+    }
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color:#102c4d;
+        margin-top: 30px;
+        position: fixed;
+
+       .logo .contenedor img{
+        padding-top: 10px;
+        height: 85px;
+       }
+        .menu{
+            display: flex;
+            .menu__secciones{
+                display: flex;
+                align-items: center;
+                gap: .7em;
+                font-size: 1.3em;
+                font-weight: 700;
+               
+            }
+        }
+        .secciones{
+            color: #bbb9b9;
+            position: relative;
+            display: inline-block;
+           
+            &:hover{
+                transform: scale(1.1);
+                color: #69d2ff;
+                transition: .55s;
+                
+            }
+            &:hover::after{
+                transform: scaleX(1);
+                transform-origin: bottom left;
+                
+                
+            }
+        }
+    }
+}
+.barra__registrarse{
+    height: 130px;
+}
