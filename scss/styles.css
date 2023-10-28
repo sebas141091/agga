@@ -286,7 +286,7 @@ a {
   }
 }
 .barra__img {
-  background-image: url(../../imagenes/muestra.jpg);
+  background-image: url(../imagenes/muestra.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -391,7 +391,7 @@ a {
 }
 
 .columna__img {
-  background-image: url(../../imagenes/nosotros.jpg);
+  background-image: url(../imagenes/nosotros.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
