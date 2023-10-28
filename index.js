@@ -27,10 +27,8 @@ function verificarUsuPass() {
 
    usuRegistrados = JSON.parse(localStorage.getItem("registrados"))
 
-  /* usuRegistrados.forEach(usuario => {
-
-   });*/
-   let registradoUsu = usuRegistrados.some(usu => usu.usuario === usuario.value);
+   if (usuRegistrados != null){
+      let registradoUsu = usuRegistrados.some(usu => usu.usuario === usuario.value);
    let registradoPass = usuRegistrados.some(usu => usu.pasword === pass.value);
    if (!registradoUsu) {
       msgLoggin("input__usu", "usuario incorrecto");
@@ -53,6 +51,8 @@ function verificarUsuPass() {
          msgLoggin("input__pass", "contraseña incorrecta");
       }
    }
+   }
+   
 }
 
 function msgLoggin(idUbicacion, texto) {
