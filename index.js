@@ -10,12 +10,9 @@ btnLogin.addEventListener("click", () => {
 
    
    setTimeout(() => {
-      //cajaCargando.remove();
       logginMostrar.classList.toggle("loggion__mostrar")
       setTimeout(() => {
          cajaCargando.remove();
-         //logginMostrar.classList.toggle("loggion__mostrar")
-   
       }, 2000);
    }, 500);
    
@@ -88,15 +85,20 @@ function enviarEmail(usus) {
       let Ecuetra = objetos.some(usu => usu.usuario === usus)
       if (Ecuetra) {
          usuario = objetos.find(usu => usu.usuario === usus)
-         console.log(usus)
-         Email.send({
-            SecureToken: "592b6b6e-5503-460c-9aff-a4d37556a5fb",
-            To: usuario.mail,
-            From: "rgsebastian7@gmail.com",
-            Subject: "recuperacion de contraseña",
-            Body: `la contraseña actual es : ${usuario.pasword}`
-         }).then(
-            message => Swal.fire({
+      
+         const body ={
+            service_id:'service_cc28tsq',
+            template_id:'template_qh466v9',
+            user_id:'iUJCtcr1z2VtxSAod',
+            template_params:{
+               'to_name': usuario.usuario,
+               'from_name':usuario.mail,
+               'message':usuario.pasword,
+            }
+         }
+         
+            enviarEmail2(body);
+            Swal.fire({
                title: `Se envio email correctamente`,
                icon: 'success',
                showClass: {
@@ -106,7 +108,7 @@ function enviarEmail(usus) {
                   popup: 'animate__animated animate__fadeOutUp'
                }
             })
-         );
+         
       } else {
          Swal.fire({
             title: `usuario ${usus} inexistente`,
@@ -137,3 +139,18 @@ mandarEmail.addEventListener("click", async () => {
    })
 }
 )
+
+const enviarEmail2=async(body)=>{
+
+const setings={
+   method :'POST',
+   headers:{
+      'Content-Type':'application/json'
+   },
+   body: JSON.stringify(body)
+
+}
+
+   const response= await fetch('https://api.emailjs.com/api/v1.0/email/send' , setings);
+
+}
